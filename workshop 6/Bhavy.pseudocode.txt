@@ -1,0 +1,28 @@
+1)start
+2)Declare variable Num_Basecoats, Num_finishingcoat, totalarea, Num_Basecans,Num_finishingcans,
+	
+3)Display " Enter the number of basecoats" and assign it to Num_Basecoats
+4)Num_Basecoats?
+	Num_Basecoats==0
+		assign Suggested_finishcoat=3 go to #7
+	Num_Basecoats==1
+		assign Suggested_finishcoat=3 go to #5
+	Num_Basecoats==2
+		assign Suggested_finishcoat=3 go to #5
+5) totalarea=Num_Basecoats* area,Num_Basecans = totalarea/12, total_Basepaint=Num_Basecans*40.75
+6)Print Unitprice,Num_Basecans,total_Basepaint
+7)Display " Enter the number of Finishingcoat" and assign it to Num_finishingcoat. also display Suggested _finishcoat
+8)User go with suggestion?
+ 	Yes: Num_finishingcoat=Suggested _finishcoat go to #9
+	No:
+9)totalarea=Num_finishingcoat* area,Num_finishingcans=totalarea/15, total_finishingpaint=Num_finishingcoat*47.75
+10)Print Unitprice,Num_finishingcans,total_finishingpaint
+11)END
+
+
+
+
+
+
+
+	

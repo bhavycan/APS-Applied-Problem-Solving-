@@ -1,0 +1,24 @@
+1. Start
+2. Declare variables   playerA, playerB, NumA,NumB
+3. NumA= rand() % 3 + 1 ,  NumB= rand() % 3 + 1
+4. Assigned Random number of player:
+	4.1 NumA==?
+		4.1.1 NumA ==1
+			 assigne "rock" to playerA .
+		4.1.2 NumA ==2
+			 assigne "paper" to playerA
+		4.1.3 NumA ==3
+	 		 assigne "sicssors" to playerA
+	4.2 NumB==?
+		4.2.1 NumB==1
+			 assigne "rock" to playerB
+		4.2.2 NumB ==2
+			 assigne "paper" to playerB
+		4.2.3 NumB ==3
+	 		 assigne "sicssors" to playerB
+		
+5. End
+
+
+
+

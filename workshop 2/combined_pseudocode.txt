@@ -1,0 +1,144 @@
+Workshop 2
+Jason, Bhavy , Harmish
+======================================================
+
+1. Start
+2. Declare precipitation, accum , temp
+3. Input the precipitation, accumulaion, and temperature to assign to "precipitation", "accum", and "temp" variables
+4. if precipitation == "snow"  &&  accum <= 2.5cm?
+	4.1 if temp < -10.0?
+		print " 1 light sand truck required ", Go to #18
+
+	4.2 if temp >= -10.0  && temp <= -5.0?
+		print " 1 light salt truck required ", Go to #18
+
+	4.3 if temp > -5.0?
+		print " No action required ", Go to #18
+
+5. if precipitation == "snow"  &&  (accum >= 2.6cm  &&  accum <= 5.0cm)?
+	4.1 if temp < -10.0?
+		print " 1 normal sand truck required ", Go to #18
+
+	4.2 if temp >= -10.0  &&  temp <= -5.0?
+		print " 1 normal salt truck required ", Go to #18
+
+	4.3 if temp > -5.0?
+		print " No action required ", Go to #18
+
+6. if precipitation == "snow"  &&  (accum >= 5.1cm  &&  accum <= 15.0cm)?
+	6.1 if temp < -10.0?
+		print " 1 plow truck and 1 normal sand truck required ", Go to #18
+
+	6.2 if temp >= -10.0  &&  temp <= -5.0?
+		print " 1 plow truck and 1 normal salt truck required ", Go to #18
+
+	6.3 if temp > -5.0?
+		print " 1 plow truck required ", Go to #18
+
+7. if precipitation == "snow"  &&  (accum >= 15.1cm  &&  accum <= 45.0cm)?
+	7.1 if temp < -10.0?
+		print " 2 plow truck and 1 normal sand truck required ", Go to #18
+
+	7.2 if temp >= -10.0 && temp <= -5.0?
+		print " 2 plow truck and 1 normal salt truck required ", Go to #18
+
+	7.3 if temp > -5.0?
+		print " 2 plow trucks required ", Go to #18
+
+8. if precipitation == "snow"  &&  accum >= 45.1?
+	print " State of emergency. Organize army and other jurisdiction support ", Go to #18
+
+9. if precipitation == "ice"  &&  accum <= 3.0mm?
+	print " No action required ", Go to #18
+
+10. if precipitation == "ice"  &&  (accum >= 3.1mm  &&  accum <= 5.0mm)?
+	10.1 if temp < -10.0?
+		print " 1 normal sand truck required ", Go to #18
+
+	10.2 if temp >= -10.0  &&  temp <= -5.0?
+		print " 1 normal salt truck required ", Go to #18
+
+	10.3 if temp > -5.0?
+		print " No action required ", Go to #18
+
+11. if precipitation == "ice"  &&  (accum >= 5.1mm  &&  accum <= 15.0mm)?
+	11.1 if temp < -10.0?
+		print " 2 heavy sand trucks required ", Go to #18
+
+	11.2 if temp >= -10.0  &&  temp <= -5.0?
+		print " 2 heavy salt trucks required ", Go to #18
+
+	11.3 if temp > -5.0?
+		print " 1 heavy salt truck required ", Go to #18
+
+12. if precipitation == "ice"  &&  accum >= 15.1mm?
+	print " State of emergecny. Oragnize army and other jurisdiction support ", Go to #18
+
+13. if precipitation == "mixed"  &&  accum <= 2.5cm?
+	print " No action required ", Go to #18
+
+14. if precipitation == "mixed" &&  (accum >= 2.6cm  &&  accum <= 5.0cm)?
+	14.1 if temp < -10.0?
+		print " 1 plow truck and 1 light sand truck required ", Go to #18
+
+	14.2 if temp >= -10.0 && temp <= -5.0?
+		print " 1 plow truck and 1 light salt truck required ", Go to #18
+
+	14.3 if temp > -5.0?
+		print " 1 plow truck required ", Go to #18
+
+15. if precipitation == "mixed"  &&  (accum >= 5.1cm  &&  accum <= 15.0cm)?
+	15.1 if temp < -10.0?
+		print " 1 plow truck and 1 heavy sand truck required ", Go to #18
+
+	15.2 if temp >= -10.0  &&  temp <= -5.0?
+		print " 1 plow truck and 1 heavy salt truck required ", Go to #18
+
+	15.3 if temp > -5.0?
+		print " 1 plow truck and 1 normal salt truck required ", Go to #18
+
+16. if precipitation == "mixed"  &&  (accum >= 15.1cm  &&  accum <= 45.0cm)?
+	16.1 if temp < -10.0?
+		print " 2 plow trucks and 1 heavy sand truck required ", Go to #18
+
+	16.2 if temp >= -10.0  &&  temp <= -5.0?
+		print " 2 plow truck and 1 heavy salt truck required ", Go to #18
+
+	16.3 if temp > -5.0?
+		print " 2 plow trucks and 1 light salt truck required ", Go to #18
+
+17. if precipitation == "mixed"  &&  accum >= 45.1cm?
+	print " State of emergency. Organize army and other jurisdiction support "
+
+18. End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

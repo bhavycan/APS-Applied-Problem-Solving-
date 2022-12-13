@@ -1,0 +1,35 @@
+Bhavy (Logic 2)
+
+============================================================================
+============================================================================
+
+1. Start
+2. Declare precipitation, accum , temp
+3. Input the precipitation, accumulaion, and temperature to assign to "precipitation", "accum", and "temp" variables
+
+4. if precipitation == "ice"  &&  accum <= 3.0mm?
+	print " No action required ", Go to #8
+
+5. if precipitation == "ice"  &&  (accum >= 3.1mm  &&  accum <= 5.0mm)?
+	5.1 if temp < -10.0?
+		print " 1 normal sand truck required ", Go to #8
+
+	5.2 if temp >= -10.0  &&  temp <= -5.0?
+		print " 1 normal salt truck required ", Go to #8
+
+	5.3 if temp > -5.0?
+		print " No action required ", Go to #8
+
+6. if precipitation == "ice"  &&  (accum >= 5.1mm  &&  accum <= 15.0mm)?
+	6.1 if temp < -10.0?
+		print " 2 heavy sand trucks required ", Go to #8
+
+	6.2 if temp >= -10.0  &&  temp <= -5.0?
+		print " 2 heavy salt trucks required ", Go to #8
+
+	6.3 if temp > -5.0?
+		print " 1 heavy salt truck required ", Go to #8
+
+7. if precipitation == "ice"  &&  accum >= 15.1mm?
+	print " State of emergecny. Oragnize army and other jurisdiction support ", Go to #8
+8. End

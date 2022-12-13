@@ -1,0 +1,31 @@
+1.start
+2.variable  price[ ] = {6,11,20}, vipTier, Clean, Sparking, Woeks, cost=0
+3.Scan stick-on chip(vip)
+4.Is there any stick-on chip?
+	Yes: detect it and get the information of  plan and assign it to vipTier and Today_washes
+	       call subprocess VIP(price[ ], vipTier ,washes)
+	No: call subprocess regular(price[ ])
+5.End
+
+subprocess VIP
+1.start
+2.Display the plan to the customer
+3. is Today_washes>=2?
+	Yes: Display "Daily limit is over, additional charge applied " 
+	No: 
+4.Today_washes++ , store it into respective customer data
+5.Display "Do you want to change wash-tier?"
+	Yes: tier==?
+		5.1 tier==Clean
+			cost+=price[0]
+		5.2 tier==Sparking
+			cost+=price[1]
+		5.3 tier==Woeks
+			cost+=price[2]
+	No:cost=0
+6. Print tier and cost
+7.End
+
+
+
+	

@@ -1,0 +1,79 @@
+
+
+LCD state (Non Active)
+start
+1.Display "Hello ! Welcome"
+2.Display "Press Enter to start"
+3.Enter to the Active state
+4. End
+
+
+
+
+
+Active State
+1. start
+2. struct product{
+	slotID;
+	sku;
+	quantity; 
+	maxQuantity; 
+	minQuantity;
+	price;
+	description;
+	}inventory;
+    struct transaction{
+	slotID;[ ] 
+	quantity [ ];
+	price[ ];
+	description[ ];
+	}session;
+   Quntity={1,2,3,4,5,6,7,8,9};
+    session.slotID= {0}, session.quantity= {0}, session.price= {0},     
+    i=0, attempt =0, min_stocklevel, orderitem[ ]
+3. Display "Enter the inventory: "
+4. get the input and scan it in inventory.slotID and stored it in session.slotID[ i ]
+5. assign sku, available quantity, maxQuantity , price , discription ,minimum stock level  to ,     inventory.sku, inventory.quantity ,inventory.maxQuantity , inventory.price,inventory.description, min_stocklevel respectivly in database according to inventory.slotID
+6. inventory.minQuantity = inventory.maxQuantity - inventory.quantity,
+7. Display "Enter the Quantity: "
+8. button==?
+	8.1 button == Enter
+ 		scan Quantity and store it in &session.quantity[i] goto #8
+	8.2 button == Correct
+		go to #7
+	8.3 button == cancel
+		go to #3
+	8.4 button == Pay
+		if( transiction.slotID[ 0 ] =0)
+		         Yes :Display "You haven't choose anything. Please order"
+			go to #3
+		         No: go to 9	
+8. if (session.quantity[i] <= inventory.quantity) ?
+	Yes: inventory.quantity -=  session.quantity[i],
+	        session.price[i] += session.quantity[i], * inventory.price
+	        session.description[i] = inventory.discription 
+	        i++ go to #9
+	No: Display "Sorry we are out of stock, plz reorder goto #3
+9.if ( inventory.quantity <= min_stocklevel)
+		Yes: assign inventory.slotID = orderitem[ ] go to #3
+		No: go to #3
+10 Payment Module Activate
+	10.1.Display  struct transaction session
+	10.2.Payment option==?
+		10.2.1 Payment option == credit card
+			Display " swipe or Enter the card" go to #10.3
+		10.2.2 Payment option == Bank card
+			Display " swipe or Enter the card" go to #10.3
+		10.2.3 Payment option == NFC phone payment
+			Display " please bring the phone near to machine" go to #10.3
+		10.2.4 Payment option == Phone application Payment	
+			Display  "please bring the phone near to machine" go to #10.3
+	10.3. Authentication sucess?
+		Yes : Display "Transaction completed sucessfully!" go to #10.4
+		No : if(attempt ==3)?
+			Yes : You have exceeded the 3 attempts. plz try differet  payment option go to #10.2 
+			No :Display "Authentification Failed!" please try again ,attempt +=1 go to #10.3
+	10.4. print struct transaction session
+11. Active LCD screen state
+
+
